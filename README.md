@@ -7,7 +7,8 @@
    6. [Web application demo using the fetch api](https://github.com/EdAlegrid/m2m-web-application-demo)
    7. [Web application demo using only an m2m browser client](https://github.com/EdAlegrid/m2m-browser-client-demo)
    8. [Monitor Data from Remote C# Application through IPC (inter-process communication)](https://github.com/EdAlegrid/csharp-ipc-application-demo)
-   9. [Create A Simple Gateway Load Balancer](https://github.com/EdAlegrid/gateway-load-balancer)
+   9. [File Integrity Monitoring](https://github.com/EdAlegrid/file-integrity-monitoring)
+   10. [Create A Simple Gateway Load Balancer](https://github.com/EdAlegrid/gateway-load-balancer)
 
 <br>
 
