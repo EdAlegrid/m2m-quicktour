@@ -79,7 +79,7 @@ The next time you run your application, it will start automatically using a save
 
 However, after a grace period of 15 minutes, you may need to provide your *security code* to restart your application.
 
-At anytime, if you're having difficulty or issues restarting your application, you can re-authenticate with an ~-r~ flag and this will refresh your token as shown below.
+At anytime, if you're having difficulty or issues restarting your application, you can re-authenticate with an `-r` flag and this will refresh your token as shown below.
 ```js
 $ node device.js -r
 ```
