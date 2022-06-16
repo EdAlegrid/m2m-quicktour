@@ -267,11 +267,11 @@ The client will also show an on/off response times providing some insight on the
 
 ## Remote Device Setup
 
-### 1. Create a device project directory and install m2m and array-gpio.
+### 1. Create a device project directory and install *m2m* and *array-gpio*.
 ```js
 $ npm install m2m array-gpio
 ```
-### 2. Save the code below as *device.js* in your device project directory.
+### 2. Save the code below as `*device.js*` in your device project directory.
 
 ```js
 const { Device } = require('m2m');
@@ -294,7 +294,7 @@ $ node device.js
 ```js
 $ npm install m2m array-gpio
 ```
-### 2. Save the code below as `client.js` in your client project directory.
+### 2. Save the code below as `*client.js*` in your client project directory.
 
 ```js
 const { Client } = require('m2m');
