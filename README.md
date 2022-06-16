@@ -300,8 +300,8 @@ $ npm install m2m array-gpio
 const { Client } = require('m2m');
 const { setInput } = require('array-gpio');
 
-let sw1 = setInput(11); // ON switch
-let sw2 = setInput(13); // OFF switch
+let sw1 = setInput(11); // as ON switch
+let sw2 = setInput(13); // as OFF switch
 
 let client = new Client();
 
@@ -337,5 +337,5 @@ client.connect(() => {
 ```js
 $ node client.js
 ```
-The led actuator from remote device should toggle on and off as you press the corresponding ON/OFF switches from the client.
+The led actuator from remote device should toggle *on* and *off* as you press the corresponding ON/OFF switches from the client.
 
