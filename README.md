@@ -15,7 +15,7 @@
 [API Reference](https://github.com/EdAlegrid/m2m-api)
 
 ---
-## Client-Server Using Channel Api
+# Client-Server Using Channel Api
 ![](assets/quicktour.svg)
 [](https://raw.githubusercontent.com/EdoLabs/src2/master/quicktour.svg?sanitize=true)
 
@@ -27,15 +27,15 @@ Using a *push-method*, the client will watch the value of the random number. The
 
 Before you start, ensure you have a [node.js](https://nodejs.org/en/) installation on your client and device computers. [Create an account](https://www.node-m2m.com/m2m/account/create) and register your remote device.
 
-### Remote Device Setup
+## Remote Device Setup
 
-#### 1. Create a device project directory and install m2m.
+### 1. Create a device project directory and install m2m.
 
 ```js
 $ npm install m2m
 ```
 
-#### 2. Save the code below as *device.js* in your device project directory.
+### 2. Save the code below as *device.js* in your device project directory.
 
 ```js
 const m2m = require('m2m');
@@ -62,7 +62,7 @@ device.connect(() => {
   });
 });
 ```
-#### 3. Start your device application.
+### 3. Start your device application.
 
 ```js
 $ node device.js
@@ -84,15 +84,15 @@ At anytime, if you're having difficulty or issues restarting your application, y
 $ node device.js -r
 ```
 
-### Remote Client Setup
+## Remote Client Setup
 
-#### 1. Create a client project directory and install m2m.
+### 1. Create a client project directory and install m2m.
 
 ```js
 $ npm install m2m
 ```
 
-#### 2. Save the code below as *client.js* in your client project directory.
+### 2. Save the code below as *client.js* in your client project directory.
 
 **Method 1**
 
@@ -169,7 +169,7 @@ client.connect(() => {
 });
 ```
 
-#### 3. Start your application.
+### 3. Start your application.
 ```js
 $ node client.js
 ```
@@ -185,23 +185,26 @@ getData test-data node-m2m is awesome
 
 <br>
 
-## Using A Browser Client
+# Using A Browser Client
 <br>
 
 Using the same device setup from client-server quicktour, we will access the channel resources using a client from the browser.
-### Browser Client Setup
+## Browser Client Setup
 
-#### 1. Login to [node-m2m](https://www.node-m2m.com/m2m/account/login) to create an access token. From the manage security section, generate an access token.
+### 1. Login to [node-m2m](https://www.node-m2m.com/m2m/account/login) to create an access token. 
 
-#### 2. Install m2m.
+From the manage security section, generate an access token.
 
-Copy the minimized file `node-m2m.min.js` from `node_modules/m2m/dist` directory to your server's public javascript directory.
+### 2. Install m2m in your server.
+
+Copy the minimized file `node-m2m.min.js` from `node_modules/m2m/dist` directory into your server's public javascript directory.
 
 Include `node-m2m.min.js` on your HTML file `<script src="YOUR_SCRIPT_PATH/node-m2m.min.js"></script>`.
 This will create a global **NodeM2M** object.
 
-#### 3. Create a client object instance from the global NodeM2M object.
-You can now access the resources from your remote devices from the various available methods from the client instance as shown below.
+### 3. Create a client object instance from the global NodeM2M object.
+
+Access the resources from your remote devices from the available methods directly from the client instance as shown below.
 
 ```js
 <script> 
