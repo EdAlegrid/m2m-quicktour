@@ -25,7 +25,7 @@ Using a *pull-method*, the client will capture the random number as one time fun
 
 Using a *push-method*, the client will watch the value of the random number. The remote device will check the random value every 5 seconds. If the value changes, it will send or *push* the new value to the client.   
 
-Before you start, [create an account](https://www.node-m2m.com/m2m/account/create) and register your remote device. You also need a [node.js](https://nodejs.org/en/) installation on your client and device computers.
+Before you start, ensure you have a [node.js](https://nodejs.org/en/) installation on your client and device computers. [Create an account](https://www.node-m2m.com/m2m/account/create) and register your remote device.
 
 ### Remote Device Setup
 
