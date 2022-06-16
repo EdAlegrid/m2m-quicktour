@@ -200,6 +200,7 @@ From the manage security section, generate an access token.
 Copy the minimized file `node-m2m.min.js` from `node_modules/m2m/dist` directory into your server's public javascript directory.
 
 Include `node-m2m.min.js` on your HTML file `<script src="YOUR_SCRIPT_PATH/node-m2m.min.js"></script>`.
+
 This will create a global **NodeM2M** object.
 
 ### 3. Create a client object instance from the global NodeM2M object.
@@ -254,7 +255,7 @@ Check the [m2m browser client web application quick tour](https://github.com/EdA
 
 <br>
 
-## Raspberry Pi Remote Control
+# Raspberry Pi Remote Control
 ![](assets/quicktour2.svg)
 [](https://raw.githubusercontent.com/EdoLabs/src2/master/quicktour2.svg?sanitize=true)
 
@@ -264,13 +265,13 @@ The client will attempt to turn *on* and *off* the remote device's actuator and 
 
 The client will also show an on/off response times providing some insight on the responsiveness of the remote control system.     
 
-### Remote Device Setup
+## Remote Device Setup
 
-#### 1. Create a device project directory and install m2m and array-gpio inside the directory.
+### 1. Create a device project directory and install m2m and array-gpio.
 ```js
 $ npm install m2m array-gpio
 ```
-#### 2. Save the code below as device.js in your device project directory.
+### 2. Save the code below as *device.js* in your device project directory.
 
 ```js
 const { Device } = require('m2m');
@@ -282,17 +283,18 @@ device.connect(() => {
 });
 ```
 
-#### 3. Start your device application.
+### 3. Start your device application.
 ```js
 $ node device.js
 ```
-### Remote Client Setup
 
-#### 1. Create a client project directory and install m2m and array-gpio.
+## Remote Client Setup
+
+### 1. Create a client project directory and install m2m and array-gpio.
 ```js
 $ npm install m2m array-gpio
 ```
-#### 2. Save the code below as client.js in your client project directory.
+### 2. Save the code below as `client.js` in your client project directory.
 
 ```js
 const { Client } = require('m2m');
@@ -331,7 +333,7 @@ client.connect(() => {
   });
 });
 ```
-#### 3. Start your application.
+### 3. Start your application.
 ```js
 $ node client.js
 ```
