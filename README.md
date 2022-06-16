@@ -137,7 +137,7 @@ client.connect(() => {
 
 If you will be accessing multiple remote devices from your client application, use this api.
 
-Instead of creating an alias, just provide the *device id* through the various data access methods from the client object.
+Instead of creating an alias, just provide the *device id* through the various available methods from the client object.
 
 ```js
 const m2m = require('m2m');
