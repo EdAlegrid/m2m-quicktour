@@ -29,7 +29,7 @@ Before you start, ensure you have a [node.js](https://nodejs.org/en/) installati
 
 ## Remote Device Setup
 
-### 1. Create a device project directory and install m2m.
+### 1. Create a device project directory and install *m2m*.
 
 ```js
 $ npm install m2m
@@ -86,7 +86,7 @@ $ node device.js -r
 
 ## Remote Client Setup
 
-### 1. Create a client project directory and install m2m.
+### 1. Create a client project directory and install *m2m*.
 
 ```js
 $ npm install m2m
@@ -195,7 +195,7 @@ Using the same device setup from client-server quicktour, we will access the cha
 
 From the manage security section, generate an access token.
 
-### 2. Install m2m in your server.
+### 2. Install *m2m* in your server.
 
 Copy the minimized file `node-m2m.min.js` from `node_modules/m2m/dist` directory into your server's public javascript directory.
 
@@ -271,7 +271,7 @@ The client will also show an on/off response times providing some insight on the
 ```js
 $ npm install m2m array-gpio
 ```
-### 2. Save the code below as `*device.js*` in your device project directory.
+### 2. Save the code below as *device.js* in your device project directory.
 
 ```js
 const { Device } = require('m2m');
@@ -290,11 +290,11 @@ $ node device.js
 
 ## Remote Client Setup
 
-### 1. Create a client project directory and install m2m and array-gpio.
+### 1. Create a client project directory and install *m2m* and *array-gpio*.
 ```js
 $ npm install m2m array-gpio
 ```
-### 2. Save the code below as `*client.js*` in your client project directory.
+### 2. Save the code below as *client.js* in your client project directory.
 
 ```js
 const { Client } = require('m2m');
