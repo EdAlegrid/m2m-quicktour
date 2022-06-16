@@ -28,13 +28,13 @@ Before you start, [create an account](https://www.node-m2m.com/m2m/account/creat
 
 ### Remote Device Setup
 
-#### 1. Create a device project directory and install m2m inside the directory.
+#### 1. Create a device project directory and install m2m.
 
 ```js
 $ npm install m2m
 ```
 
-#### 2. Save the code below as device.js within your device project directory.
+#### 2. Save the code below as *device.js* in your device project directory.
 
 ```js
 const m2m = require('m2m');
@@ -85,17 +85,19 @@ $ node device.js -r
 
 ### Remote Client Setup
 
-#### 1. Create a client project directory and install m2m inside the directory.
+#### 1. Create a client project directory and install m2m.
 
 ```js
 $ npm install m2m
 ```
 
-#### 2. Save the code below as client.js within your client project directory.
+#### 2. Save the code below as *client.js* in your client project directory.
 
 **Method 1**
 
-If you are accessing only one remote device from your client application, you can use this api. Create an *alias* object using the client's *accessDevice* method as shown in the code below.
+If you are accessing only one remote device from your client application, you can use this api. 
+
+Create an *alias* object using the client's *accessDevice* method as shown in the code below.
 
 ```js
 const m2m = require('m2m');
@@ -132,7 +134,9 @@ client.connect(() => {
 
 **Method 2**
 
-If you are accessing multiple remote devices from your client application, you can use this api. Instead of creating an alias, you can just provide the *device id* through the various data access methods from the client object.
+If you will be accessing multiple remote devices from your client application, use this api.
+
+Instead of creating an alias, just provide the *device id* through the various data access methods from the client object.
 
 ```js
 const m2m = require('m2m');
