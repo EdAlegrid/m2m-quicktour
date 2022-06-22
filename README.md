@@ -251,7 +251,7 @@ getData test-data node-m2m is awesome
 ```
 <br>
 
-Check the [m2m-browser-client-demo](https://github.com/EdAlegrid/m2m-browser-client-demo) for a complete web application using a browser client.
+Check the [m2m-browser-client-demo](https://github.com/EdAlegrid/m2m-browser-client-demo) for a complete web application tutorial using a browser client.
 
 <br>
 
