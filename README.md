@@ -303,6 +303,12 @@ const { setInput } = require('array-gpio');
 let sw1 = setInput(11); // as ON switch
 let sw2 = setInput(13); // as OFF switch
 
+// enable internal pull-down resistor
+// since the other end of the sw is
+// connected to a resistor and 3.3V
+sw1.setR(0);
+sw2.setR(0);
+
 let client = new Client();
 
 client.connect(() => {
